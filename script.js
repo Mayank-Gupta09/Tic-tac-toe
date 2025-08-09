@@ -40,8 +40,10 @@ const checkWinner = () => {
         if(pos1val != "" && pos2val != "" && pos3val !=""){
             if(pos1val === pos2val && pos2val === pos3val){
                 console.log("We have a winner", pos1val);
+                document.getElementById('WR').textContent = pos1val;
             }
         }
 
     }
+    
 }
